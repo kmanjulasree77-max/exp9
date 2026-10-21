@@ -15,3 +15,12 @@ function add() {
 
     document.getElementById("name").value = "";
 }
+function search() {
+    let name = document.getElementById("search").value;
+
+    if (students.includes(name)) {
+        document.getElementById("result").innerHTML = "Found";
+    } else {
+        document.getElementById("result").innerHTML = "Not Found";
+    }
+}
